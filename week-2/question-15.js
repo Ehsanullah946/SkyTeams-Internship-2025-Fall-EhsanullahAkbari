@@ -11,3 +11,5 @@ export const triangleValidity = (a, b, c) => {
        return "not valid";
     }
 }
+
+
