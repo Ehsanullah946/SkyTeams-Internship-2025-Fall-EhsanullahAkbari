@@ -3,11 +3,12 @@
 // exercise 2 of week-2 finding the leap year
 // example
 // input :  2000
-// output:  leap year
-export const leapYear = (year) => {
-    if ((!(year % 100 === 0) || (year % 400===0 && year % 100===0)) && (year % 4===0)) {
-         return "Leap year"
+// output:  true
+
+export const isLeapYear = (year) => {
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        return true;
     } else {
-        return "not leap year"
-    }
+        return false;
+    }   
 }
