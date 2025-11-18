@@ -19,6 +19,4 @@ export const pattern = (n) => {
         console.log(str);
     }
 }
-
-
 pattern(4);
