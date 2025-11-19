@@ -9,7 +9,7 @@ const test = (name, actual, expect) => {
         console.log("expect", expect);
     }
 }
-test("",leapYear(2000),"Leap year");
+test("leap year(2004)",leapYear(2000),"Leap year");
 test("leap year(2004)",leapYear(2004),"Leap year");
 test("leap year(2008)",leapYear(2008),"Leap year");
 test("leap year(2012)",leapYear(2012),"Leap year");
