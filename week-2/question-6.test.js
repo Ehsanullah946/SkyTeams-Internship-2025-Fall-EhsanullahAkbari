@@ -10,6 +10,7 @@ const test = (name, actual, expect) => {
 
     }
 }
+
 test("formatSecond(3665)", formatSecond(3665),"1 h, 1 m, 5 s");
 test("formatSecond(30)", formatSecond(30),"0 h, 0 m, 30 s");
 test("formatSecond(65)", formatSecond(65),"0 h, 1 m, 5 s");
