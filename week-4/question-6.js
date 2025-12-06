@@ -1,5 +1,3 @@
-
-
 // Author: Ehsanullah Akbari
 
 // Date: 2025-11-30
