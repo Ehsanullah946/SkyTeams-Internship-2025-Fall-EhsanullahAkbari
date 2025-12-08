@@ -6,10 +6,9 @@
 // output: 1,2,3,4,5,6,7,8,9.10
 export const printNumber = (number) => {
     let i = 1;
-    for ( i = 1; i < number; i++){
+    for ( i = 1; i <= number; i++){
         console.log(i)
     }
-    return i;
 }
 
 
