@@ -16,7 +16,7 @@
 export const patterPiramid = (number) => {
         for (let i = 1; i <= number; i++){
         let str = "";
-        for (let j = number; j >= i; j--){
+        for (let j = number; j >= i+1; j--){
              str+=" "
          }
          for (let j = 1; j <= i; j++){

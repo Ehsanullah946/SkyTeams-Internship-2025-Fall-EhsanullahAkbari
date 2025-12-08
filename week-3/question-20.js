@@ -12,12 +12,12 @@ export const BMICalculate = (weight, height) => {
     let BMI = Number((weight / (height * height)).toFixed(1));
     if (BMI < 18.5) {
         return `${BMI}(Underweight)`
-    } else if (BMI >= 18.5 && BMI < 25) {
+    } else if (BMI >= 18.5 && BMI <= 25) {
         return `${BMI}(Normal weight)`
-    } else if ( BMI > 25 && BMI < 30 ) {
+    } else if ( BMI > 25 && BMI <= 30 ) {
         return `${BMI}(Overweight:)`
     } else if( BMI > 30 ){
-        return `${BMI}(Obase:)`  
+        return `${BMI}(Obese:)`  
     }
 }
 console.log(BMICalculate(70,1.75))
