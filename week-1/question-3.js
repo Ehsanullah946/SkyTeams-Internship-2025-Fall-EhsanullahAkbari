@@ -7,11 +7,11 @@
 // output: 56
 
 export const findMax = (array) => {
-    let max = 0;
-    for (let i = 0; i <= array.length; i++){
-        if (array[i] > max) {
-            max = array[i];
-        }
+  let max = array[0]; 
+  for (let i = 1; i < array.length; i++) { 
+    if (array[i] > max) {
+      max = array[i];
     }
-    return max;
-}
+  }
+  return max;
+};
