@@ -35,8 +35,6 @@ class MinStack {
    }
 
 }
-
-
 const stack = new MinStack();
 
 stack.push(20);

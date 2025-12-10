@@ -1,11 +1,9 @@
 
-
  export class Stack {
     constructor(top=-1,array=[]) {
         this.top = top;
         this.array = array;
     }
-
     push(item) {
         return this.array[++this.top]=item;
     }
