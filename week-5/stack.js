@@ -1,6 +1,6 @@
 
 
-class Stack {
+ export class Stack {
     constructor(top=-1,array=[]) {
         this.top = top;
         this.array = array;
@@ -56,13 +56,6 @@ class Stack {
 
 
 
-let stack = new Stack();
-(stack.push(4));
-(stack.push(5));
-console.log(stack.size());
-console.log(stack.peek(5));
-console.log(stack.isEmpty());
-console.log(stack.reverse());
-console.log(stack.printStack());
+
 
 
