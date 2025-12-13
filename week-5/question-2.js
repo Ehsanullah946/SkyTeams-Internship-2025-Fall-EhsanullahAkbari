@@ -37,15 +37,14 @@ class MinStack {
 }
 const stack = new MinStack();
 
-stack.push(20);
-
-stack.push(10);
-(stack.pop());
-stack.push(11);
-stack.push(5);
-stack.push(50);
-console.log(stack.printMinStack());
-console.log(stack.getMin());
+// stack.push(20);
+// stack.push(10);
+// (stack.pop());
+// stack.push(11);
+// stack.push(5);
+// stack.push(50);
+// console.log(stack.printMinStack());
+// console.log(stack.getMin());
 
 
 
