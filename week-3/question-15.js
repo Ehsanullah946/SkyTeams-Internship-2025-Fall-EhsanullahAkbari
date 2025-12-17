@@ -21,7 +21,6 @@ export const checkArmstrong = (number) => {
     }
     if (result === act) {
         return isArmstrong = true;
-
     } else {
         return isArmstrong = false;
      }

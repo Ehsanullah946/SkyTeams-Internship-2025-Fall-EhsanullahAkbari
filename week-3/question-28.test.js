@@ -9,6 +9,7 @@ const test = (name, actual, expect) => {
         console.log("expect", expect);
     }
 }
+
 test("removeDuplicateElement([1,2,3,4,4,5])", removeDuplicateElement([1,2,3,4,4,5]),[1,2,3,4,5]);
 test("removeDuplicateElement([1,2,2,2])", removeDuplicateElement([1,2,2,2]),[1,2]);
 test("removeDuplicateElement([3,4,4,4])", removeDuplicateElement([3,4,4,4]),[3,4]);
