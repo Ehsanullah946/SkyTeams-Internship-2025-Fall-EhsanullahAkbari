@@ -5,7 +5,11 @@
 // Example: 
 // "waterbottle", "erbottlewat" → True
 
-export const isRotateString = (string1,string2,k) => {
+export const isRotateString = (string1, string2, k) => {
+    
+    if (string1.length === string2.length) {
+        return false;
+    }
     let result = '';
     for (let i =  k; i < string1.length; i++){
             result += string1[i];
@@ -14,11 +18,8 @@ export const isRotateString = (string1,string2,k) => {
     for (let i = 0; i < k; i++){
             result += string1[i];
     }
-    console.log(result)
-
     if (result !== string2) {
         return false;
     }
-
     return true;
 }

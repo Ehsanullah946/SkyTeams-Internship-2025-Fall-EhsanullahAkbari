@@ -16,12 +16,9 @@ export const compressString = (str) => {
             result += str[i];
             result += count;
             count = 1;
-        } else {
-            result += str[i];   
-            result += 1;
         }
     }
     return result;
 }
 
-console.log(compressString("aabcccccaa"))
+console.log(compressString("aabbccccccaa"))

@@ -7,14 +7,19 @@
 
 
 export const intersectionArray = (array1, array2) => {
-    let result ={};
-      for (let index = 0; index < array1.length; index++) {
-          let element = array1[index];
-          if (array2.includes(element)) {
-              result[element] = element;
-          }     
+    let result = [];
+    let map = {};   
+    for (let i = 0; i < array1.length; i++) {
+        map[array1[i]] = true;
+    }       
+    for (let j = 0; j < array2.length; j++) {
+        if (map[array2[j]]) {
+            result.push(array2[j]);
+            delete map[array2[j]];
+        }
     }
     return result;
+    
 }
 
 console.log(intersectionArray([1, 2, 3, 4], [3, 4, 4, 6]));

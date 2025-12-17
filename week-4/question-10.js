@@ -6,12 +6,20 @@
 // "hello" → Not Unique 
 
 export const isUniqueString = (string) => {
-    let isUnique = true;
+    let map = {};
     for (let i = 0; i < string.length; i++) {
-        if (string[i] === string[i + 1]) {
-            isUnique = false;
+        if (!map[string[i]]) {
+            map[string[i]] = 1;
+        } else {
+            map[string[i]]++;
+        }
+    }   
+    for (let i = 0; i < string.length; i++) {
+        if (map[string[i]]>1) {
+            return false;
         }
     }
-    return isUnique;
+    return true;
 }
 
+console.log(isUniqueString("Ehsan"));
