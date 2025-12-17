@@ -2,7 +2,7 @@
 
 // Date: 2025-10-15
 
-// exercise 7 of week-3 find the min number in array
+// exercise 7 of week-3  check if an array contains a specific element
 // example
 
 // input :  [33,4,5,6]; element=4

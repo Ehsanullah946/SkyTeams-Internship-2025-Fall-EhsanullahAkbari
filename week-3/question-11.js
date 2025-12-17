@@ -10,7 +10,7 @@
 
 
 export const printPrime = (number) => {
-    let temp = [];
+    let primes = [];
     for (let i = 2; i <= number; i++){
         let isPrime = true;
         for (let j = 2; j <= Math.sqrt(i); j++){
@@ -19,8 +19,8 @@ export const printPrime = (number) => {
                 break;
             }
         }
-        if (isPrime) temp.push(i);
+        if (isPrime) primes.push(i);
     }   
-    return temp;
+    return primes;
 }
 
